@@ -14,11 +14,11 @@ Streamline your QA workflow with intelligent test case generation and automated 
 ## 📸 Screenshots
 
 ### Test Case Generator - AI Generation
-![Test Case Generator](https://github.com/AmolMagar2000/AI-Powered-Test-Case-Generator/blob/d5639d2523454305aef035099b0cf3f9b5e9ada7/screenshots/Screenshot%20(10).png)
+![Test Case Generator](https://github.com/AmolMagar2000/AI-Powered-Test-Case-Generator/blob/d5639d2523454305aef035099b0cf3f9b5e9ada7/screenshots/Screenshot%20(9).png)
 *Generate comprehensive test cases from user stories and requirements using AI*
 
 ### Test Automation Code Generator
-![Test Automation](https://github.com/AmolMagar2000/AI-Powered-Test-Case-Generator/blob/d5639d2523454305aef035099b0cf3f9b5e9ada7/screenshots/Screenshot%20(9).png)
+![Test Automation](https://github.com/AmolMagar2000/AI-Powered-Test-Case-Generator/blob/d5639d2523454305aef035099b0cf3f9b5e9ada7/screenshots/Screenshot%20(10).png)
 *Automatically generate production-ready Selenium automation code in Java*
 
 ---
