@@ -14,7 +14,7 @@ Streamline your QA workflow with intelligent test case generation and automated 
 ## 📸 Screenshots
 
 ### Test Case Generator - AI Generation
-![Test Case Generator](https://raw.githubusercontent.com/YOUR_USERNAME/qa-test-automation-suite/main/screenshots/test-case-generator.png)
+![Test Case Generator](https://raw.githubusercontent.com/AmolMagar2000/qa-test-automation-suite/main/screenshots/test-case-generator.png)
 *Generate comprehensive test cases from user stories and requirements using AI*
 
 ### Test Automation Code Generator
