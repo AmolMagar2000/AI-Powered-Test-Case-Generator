@@ -1,192 +1,426 @@
 # 🤖 QE Test Automation Suite
 
-**Enterprise-Grade Test Case Generator & Selenium Automation Code Builder (Powered by Gemini 1.5 Flash & Streamlit)**
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-FF4B4B.svg)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Gemini](https://img.shields.io/badge/Powered%20by-Gemini%202.0%20Flash-4285F4.svg)](https://deepmind.google/technologies/gemini/)
+
+**AI-Powered Test Case Generator and Selenium Automation Code Generator**
+
+Streamline your QA workflow with intelligent test case generation and automated code creation for Selenium WebDriver using Java and TestNG.
 
 ---
 
-## Overview
+## 📸 Screenshots
 
-The QE Test Automation Suite is an all-in-one platform for quality engineers to:
+### Test Case Generator - AI Generation
+![Test Case Generator](https://raw.githubusercontent.com/YOUR_USERNAME/qa-test-automation-suite/main/screenshots/test-case-generator.png)
+*Generate comprehensive test cases from user stories and requirements using AI*
 
-- ✨ **Generate professional test cases** from requirements or user stories using AI
-- 🧑‍💻 **Produce production-ready Java Selenium automation code** (TestNG, Page Object Model, Allure, Log4j2, etc.)
-- 🏗️ **Build complete automation frameworks** adhering to enterprise standards
-- 📄 **Manage, edit, and download** test cases and automation artifacts in a user-friendly Streamlit interface
-
-This app leverages Google's Gemini 1.5 Flash model, providing industry-leading test design and code generation capabilities.
-
----
-
-## 🚀 Features
-
-- **AI-Powered Test Case Generation:**  
-  Input requirements or user stories, and instantly generate comprehensive test cases in JSON format.
-
-- **Manual Test Case Authoring:**  
-  Create, edit, and manage your own test cases with rich forms and attachment support.
-
-- **Bulk Test Case Management:**  
-  Select, copy, delete, and batch-generate automation code for multiple test cases.
-
-- **Automation Code Generation:**  
-  Generate Java Selenium automation code (TestNG, POM, Allure, Log4j2, explicit waits, thread safety, etc.) for:
-  - Individual test cases
-  - Combined test suite (multiple test cases in one suite)
-
-- **Downloadable Artifacts:**  
-  Download generated code as a ready-to-use ZIP archive.
-
-- **Enterprise UI/UX:**  
-  Modern, responsive Streamlit web app with advanced CSS styling and usability features.
+### Test Automation Code Generator
+![Test Automation](https://raw.githubusercontent.com/YOUR_USERNAME/qa-test-automation-suite/main/screenshots/test-automation.png)
+*Automatically generate production-ready Selenium automation code in Java*
 
 ---
 
-## 🏗️ Tech Stack
+## ✨ Features
 
-- [Streamlit](https://streamlit.io/) — UI framework
-- [Google Gemini 1.5 Flash](https://ai.google.dev/) — AI test case/code generation
-- [PyPDF2](https://pypi.org/project/pypdf2/), [python-docx](https://pypi.org/project/python-docx/), [pandas](https://pandas.pydata.org/) — File parsing
-- [Base64](https://docs.python.org/3/library/base64.html) — Attachment encoding
+### 🧪 Test Case Management
+- **Manual Test Case Creation** - Create detailed test cases with all necessary fields
+- **AI-Powered Generation** - Generate test cases from requirements using Gemini 2.0 Flash
+- **Context-Aware Generation** - Generate additional test cases based on existing context
+- **Bulk Operations** - Select, edit, and delete multiple test cases at once
+- **Excel Export** - Export all test cases to Excel format for documentation
+
+### 🤖 Automation Code Generation
+- **Java Selenium Code** - Generate TestNG-based automation code
+- **Page Object Model** - Uses industry-standard POM design pattern
+- **Combined Test Suites** - Generate single test class with multiple test methods
+- **Separate Test Classes** - Generate individual test files for each test case
+- **Download as ZIP** - Package all generated files for easy integration
+
+### 📊 Additional Features
+- **Priority Management** - Categorize test cases by High, Medium, Low priority
+- **File Attachments** - Support for screenshots, PDFs, DOCX, and Excel files
+- **Clean UI** - Modern, intuitive interface with smooth navigation
+- **Statistics Dashboard** - Track total and selected test cases
+- **Toast Notifications** - User-friendly feedback for all actions
 
 ---
 
-## ⚡ Quick Start
+## 🚀 Quick Start
 
-### 1. Clone the Repository
+### Prerequisites
 
-```bash
-git clone https://github.com/pasindu-kalubowila/QA_Test_Automation_Streamlit_App.git
-cd QA_Test_Automation_Streamlit_App
+- Python 3.8 or higher
+- Google Gemini API Key ([Get it here](https://makersuite.google.com/app/apikey))
+- Git (optional, for version control)
+
+### Installation
+
+#### Option 1: Automated Setup (Windows)
+
+1. **Download/Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/qa-test-automation-suite.git
+   cd qa-test-automation-suite
+   ```
+
+2. **Run setup script**
+   ```bash
+   setup.bat
+   ```
+
+3. **Configure API Key**
+   - Edit `.env` file
+   - Replace `your_api_key_here` with your actual Gemini API key
+
+4. **Launch the application**
+   ```bash
+   streamlit run app.py
+   ```
+
+#### Option 2: Manual Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/qa-test-automation-suite.git
+   cd qa-test-automation-suite
+   ```
+
+2. **Create virtual environment**
+   ```bash
+   python -m venv venv
+   
+   # On Windows
+   venv\Scripts\activate
+   
+   # On macOS/Linux
+   source venv/bin/activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Create `.env` file**
+   ```bash
+   # Create .env file in root directory with:
+   GEMINI_API_KEY=your_actual_api_key_here
+   APP_ENV=development
+   ```
+
+5. **Run the application**
+   ```bash
+   streamlit run app.py
+   ```
+
+6. **Open your browser**
+   - Navigate to `http://localhost:8501`
+
+---
+
+## 📁 Project Structure
+
+```
+qa-test-automation-suite/
+│
+├── app.py                      # Main application entry point
+├── requirements.txt            # Python dependencies
+├── .env                        # Environment variables (create this)
+├── .gitignore                 # Git ignore rules
+├── README.md                  # This file
+├── setup.bat                  # Windows setup script
+├── setup.sh                   # Linux/Mac setup script
+│
+├── assets/
+│   └── style.css              # Custom CSS styles
+│
+├── pages/
+│   ├── __init__.py
+│   ├── test_case_gen.py       # Test case generator page
+│   └── test_automation.py     # Automation code generator page
+│
+├── utils/
+│   ├── __init__.py
+│   ├── ai_utils.py            # Gemini AI integration
+│   ├── code_utils.py          # Code parsing utilities
+│   ├── file_utils.py          # File handling (PDF, DOCX, Excel)
+│   └── ui_utils.py            # UI helper functions
+│
+└── screenshots/               # UI screenshots for documentation
+    ├── test-case-generator.png
+    └── test-automation.png
 ```
 
-### 2. Install Dependencies
+---
 
-```bash
-pip install -r requirements.txt
-```
+## 📖 Usage Guide
 
-### 3. Set Up Environment Variables
+### Creating Test Cases Manually
 
-Create a `.env` file in the project root:
+1. Navigate to **Test Case Generator**
+2. Select **Manual Creation** tab
+3. Fill in the form:
+   - **Area**: Category (e.g., UI/UX, API, Database)
+   - **Module**: Main module name (e.g., Authentication)
+   - **Sub-Module**: Specific feature (e.g., Login)
+   - **Test Scenario**: Brief description (required)
+   - **Priority**: High, Medium, or Low
+   - **Preconditions**: Setup requirements
+   - **Test Data**: Input data needed
+   - **Test Steps**: Detailed steps (required)
+   - **Expected Results**: What should happen (required)
+4. Click **Save Test Case**
+
+### Generating Test Cases with AI
+
+1. Navigate to **Test Case Generator**
+2. Select **AI Generation** tab
+3. Enter your requirements or user story in the text area:
+   ```
+   Example:
+   As a user, I want to login so that I can access my account.
+   
+   Acceptance Criteria:
+   • Valid credentials allow login
+   • Invalid credentials show error message
+   • Forgot password link is available
+   ```
+4. Set number of test cases to generate (1-50)
+5. Select default priority
+6. Click **Generate Test Cases**
+7. AI will create comprehensive test cases automatically
+
+### Generating Automation Code
+
+1. In **Test Case Library**, select test cases using checkboxes
+2. Click **Automate (N)** button where N is the number selected
+3. Choose generation mode:
+   - **Combined Test Suite**: Single test class with all tests
+   - **Separate Test Classes**: Individual files for each test case
+4. Click **Generate Automation Code**
+5. Review generated Java code with TestNG annotations
+6. Click **Download** to get ZIP file with all code files
+
+### Exporting Test Cases
+
+1. In **Test Case Library**, click **Export Excel**
+2. Excel file will download with all test case details:
+   - ID, Area, Module, Sub-Module
+   - Title, Priority
+   - Preconditions, Test Data
+   - Test Steps, Expected Results
+   - Attachments list
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| **Python 3.8+** | Core programming language |
+| **Streamlit** | Web application framework |
+| **Google Gemini 2.0 Flash** | AI model for test case and code generation |
+| **Pandas** | Data manipulation and Excel export |
+| **PyPDF2** | PDF file processing |
+| **python-docx** | Microsoft Word file processing |
+| **OpenPyXL** | Excel file handling |
+| **python-dotenv** | Environment variable management |
+
+---
+
+## ⚙️ Configuration
+
+### Environment Variables
+
+Create a `.env` file in the root directory:
 
 ```env
-GEMINI_API_KEY=your_gemini_api_key_here
+# Google Gemini API Configuration
+GEMINI_API_KEY=your_actual_api_key_here
+
+# Application Configuration
+APP_ENV=development
 ```
 
-> **Note:** You need access to [Google Gemini API](https://makersuite.google.com/app/apikey).
+### Supported File Types
 
-### 4. Run the App
+**For Attachments:**
+- Images: PNG, JPG, JPEG
+- Documents: PDF, DOCX, TXT
+- Spreadsheets: XLSX, XLS, CSV
 
+---
+
+## 🎨 UI Features
+
+- **Modern Design**: Clean, professional interface with gradient headers
+- **Responsive Layout**: Adapts to different screen sizes
+- **Priority Indicators**: Color-coded icons (🔴 High, 🟡 Medium, 🟢 Low)
+- **Toast Notifications**: Real-time feedback for user actions
+- **Smooth Animations**: Enhanced user experience with transitions
+- **Sidebar Navigation**: Easy switching between pages
+- **Statistics Dashboard**: Quick overview of test case metrics
+
+---
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Issue**: `ModuleNotFoundError: No module named 'docx'`
 ```bash
-streamlit run app.py
+# Solution
+pip install python-docx
+```
+
+**Issue**: `GEMINI_API_KEY not configured`
+```bash
+# Solution
+# 1. Check if .env file exists in root directory
+# 2. Verify GEMINI_API_KEY is set correctly
+# 3. Restart the application
+```
+
+**Issue**: Port 8501 already in use
+```bash
+# Solution
+streamlit run app.py --server.port 8502
+```
+
+**Issue**: Changes not reflecting
+```bash
+# Solution
+# Hard refresh browser: Ctrl + Shift + R (Windows/Linux) or Cmd + Shift + R (Mac)
+```
+
+**Issue**: Git push rejected
+```bash
+# Solution
+git pull origin main --rebase
+git push origin main
 ```
 
 ---
 
-## 🧪 Usage
+## 📊 Roadmap
 
-### Home
-
-- Welcome & feature summary
-- Navigation sidebar
-
-### Test Case Generator
-
-- **Manual Creation:**  
-  Fill in scenario, steps, expected results, and attach files/screenshots.
-- **AI Generation:**  
-  Enter user stories or requirements → Get instant, structured test cases.
-- **Bulk Actions:**  
-  Select, copy, delete, or send test cases to automation.
-
-### Test Automation
-
-- **Combined Suite:**  
-  Generate a single Java test class for multiple selected test cases.
-- **Separate Files:**  
-  Generate separate Java classes per test case.
-- **Download ZIP:**  
-  Download all Java source files as a ready-to-import zip.
+- [ ] Support for additional programming languages (Python, JavaScript)
+- [ ] Integration with test management tools (Jira, TestRail)
+- [ ] Import test cases from Excel
+- [ ] Test case templates library
+- [ ] Test execution reports
+- [ ] API testing code generation
+- [ ] Database validation code generation
+- [ ] Mobile automation support (Appium)
+- [ ] CI/CD integration examples
 
 ---
 
-## 🛡️ Enterprise Java Standards
+## 🤝 Contributing
 
-- Java 17
-- Selenium WebDriver
-- TestNG
-- Page Object Model (with `@FindBy`)
-- WebDriver Factory (Factory Pattern)
-- Singleton configuration
-- Log4j2 logging
-- Allure reporting
-- Explicit waits with `WebDriverWait`
-- Thread-safe implementation
-- Meaningful assertions
+Contributions are welcome! Here's how you can help:
 
----
+1. **Fork the repository**
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Commit your changes**
+   ```bash
+   git commit -m "Add amazing feature"
+   ```
+4. **Push to the branch**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. **Open a Pull Request**
 
-## 📂 File Upload Support
+### Development Guidelines
 
-- **Test Case Attachments:**  
-  - Images: PNG, JPG, JPEG
-  - Docs: PDF, TXT
-- **Requirement Uploads:**  
-  - TXT, PDF, DOCX, CSV, XLSX (auto-parsed)
-
----
-
-## ✨ Screenshots
-
-<p align="center">
-  <img width="1919" height="990" alt="home_page" src="https://github.com/user-attachments/assets/39ff951b-2890-4ea1-8274-7ef85ab1bd48" />
-</p>
-
-<p align="center">
-  <img width="1918" height="993" alt="test_case_generate_page" src="https://github.com/user-attachments/assets/2ff025d5-8acb-4e53-a944-a8ae8535bf41" />
-</p>
-
-<p align="center">
-  <img width="1918" height="995" alt="test_automation_page" src="https://github.com/user-attachments/assets/29490b51-ac83-403a-bd9d-38dd1a2caf4f" />
-</p>
-
-<p align="center">
-  <img width="1916" height="946" alt="generate_test_case_from_requirement" src="https://github.com/user-attachments/assets/344ed5f8-b66e-476e-9c84-fd81a105ae33" />
-</p>
+- Follow PEP 8 style guide for Python code
+- Add comments for complex logic
+- Update documentation for new features
+- Test thoroughly before submitting PR
 
 ---
 
-## 📝 Requirements
+## 📝 License
 
-See [`requirements.txt`](./requirements.txt):
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- `streamlit`
-- `python-dotenv`
-- `google-generativeai`
-- `PyPDF2`
-- `python-docx`
-- `pandas`
-- `openpyxl`
+```
+MIT License
 
----
+Copyright (c) 2025 Amol Magar
 
-## 🙌 Contributing
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Pull requests are welcome!  
-For major changes, please open an issue first to discuss what you would like to change.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
----
-
-## 📄 License
-
-[MIT](LICENSE)
-
----
-
-## 👤 Author
-
-- [Pasindu Kalubowila](https://github.com/pasindu-kalubowila)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ---
 
-> QE Test Automation Suite | Powered by Gemini 1.5 Flash & Streamlit
+## 👨‍💻 Author
+
+**Amol Magar**
+
+- GitHub: [@YOUR_GITHUB_USERNAME](https://github.com/YOUR_GITHUB_USERNAME)
+- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
+- Email: your.email@example.com
+
+---
+
+## 🙏 Acknowledgments
+
+- [Streamlit](https://streamlit.io/) - Amazing framework for building data apps
+- [Google Gemini](https://deepmind.google/technologies/gemini/) - Powerful AI model
+- [TestNG](https://testng.org/) - Testing framework inspiration
+- [Selenium WebDriver](https://www.selenium.dev/) - Browser automation standard
+
+---
+
+## 📞 Support
+
+If you encounter any issues or have questions:
+
+1. Check the [Troubleshooting](#-troubleshooting) section
+2. Search existing [Issues](https://github.com/YOUR_USERNAME/qa-test-automation-suite/issues)
+3. Create a new issue with detailed description
+4. Contact the author
+
+---
+
+## ⭐ Show Your Support
+
+If you find this project helpful, please give it a ⭐ on GitHub!
+
+---
+
+## 📈 Stats
+
+![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/qa-test-automation-suite?style=social)
+![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/qa-test-automation-suite?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/YOUR_USERNAME/qa-test-automation-suite?style=social)
+
+---
+
+**Built with ❤️ by Amol Magar**
+
+*Empowering QA engineers with AI-powered automation*
