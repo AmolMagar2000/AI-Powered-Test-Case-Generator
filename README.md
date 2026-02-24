@@ -381,9 +381,9 @@ SOFTWARE.
 
 **Amol Magar**
 
-- GitHub: [@YOUR_GITHUB_USERNAME](https://github.com/YOUR_GITHUB_USERNAME)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- Email: your.email@example.com
+- GitHub: [@YOUR_GITHUB_USERNAME](https://github.com/AmolMagar2000)
+- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/amol-magar-06997121a)
+- Email: amolm986@gmail.com
 
 ---
 
@@ -401,7 +401,7 @@ SOFTWARE.
 If you encounter any issues or have questions:
 
 1. Check the [Troubleshooting](#-troubleshooting) section
-2. Search existing [Issues](https://github.com/YOUR_USERNAME/qa-test-automation-suite/issues)
+2. Search existing [Issues](https://github.com/AmolMagar2000/qa-test-automation-suite/issues)
 3. Create a new issue with detailed description
 4. Contact the author
 
@@ -415,7 +415,7 @@ If you find this project helpful, please give it a ⭐ on GitHub!
 
 ## 📈 Stats
 
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/qa-test-automation-suite?style=social)
+![GitHub stars](https://img.shields.io/github/stars/AmolMagar2000/qa-test-automation-suite?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/qa-test-automation-suite?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/YOUR_USERNAME/qa-test-automation-suite?style=social)
 
