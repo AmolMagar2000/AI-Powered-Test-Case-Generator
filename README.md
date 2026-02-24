@@ -381,8 +381,8 @@ SOFTWARE.
 
 **Amol Magar**
 
-- GitHub: [@YOUR_GITHUB_USERNAME](https://github.com/AmolMagar2000)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/amol-magar-06997121a)
+- GitHub: [@https://github.com/AmolMagar2000](https://github.com/AmolMagar2000)
+- LinkedIn: [https://linkedin.com/in/amol-magar-06997121a](https://linkedin.com/in/amol-magar-06997121a)
 - Email: amolm986@gmail.com
 
 ---
